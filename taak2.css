@@ -17,7 +17,7 @@ nav {
     align-items: center;
     padding: 20px;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Zorgt ervoor dat de navigatie boven de video blijft */
 }
 
 nav ul {
@@ -39,4 +39,15 @@ nav ul li a, #sign_in_button a {
     padding: 10px 20px;
     background-color: red;
     border-radius: 20px;
+}
+
+/* Video stijlen */
+.hero_new__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zorgt ervoor dat de video de volledige achtergrond bedekt */
+    z-index: -1; /* Plaatst de video achter de andere content */
 }
