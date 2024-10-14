@@ -19,7 +19,6 @@ nav {
     position: relative;
     z-index: 1;
 }
-
 nav ul {
     display: flex;
     list-style-type: none;
